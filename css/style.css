@@ -1,0 +1,122 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/*  */
+body {
+	padding-bottom: 100px;
+}
+h1 {
+	font-size: 50px;
+}
+.navigation {
+	font-size: 30px;
+}
+.navigation li {
+	margin-bottom: 3px;
+}
+.nav_tiitle {
+	margin-bottom: 5px;
+}
+.header {
+	margin-bottom: 30px;
+}
+.main {
+}
+.content {
+	margin-bottom: 15px;
+}
+.content_title {
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+.content_text {
+	font-size: 15px;
+	color: red;
+}
+.effer {
+	margin-bottom: 15px;
+}
+.smart {
+	margin-bottom: 15px;
+}
+.history {
+}
+.footer {
+}
+
+/* p.content_text {
+	color: royalblue;
+} */
+/* .history p {
+	color: rgb(126, 95, 116);
+} */
+.history .content_title {
+	font-size: 50px;
+}
+.history,
+.footer {
+	color: aqua;
+}
+.effer .content_text,
+.effer .content_title {
+	color: blue;
+}
+*.content_title{
+	color: crimson;
+}
+.main ~ span {
+	color: rgba(27, 226, 37, 0.904);
+}
+p + .content_text {
+	color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
