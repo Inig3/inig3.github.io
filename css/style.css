@@ -1,3 +1,43 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+		url('../fonts/Gilroy-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+		url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+		url('../fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
 *::before,
@@ -6,16 +46,20 @@
 	padding: 0;
 	border: 0;
 }
+
 li {
 	list-style: none;
 }
+
 a,
 a:visited {
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -25,98 +69,91 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
+
 img {
 	vertical-align: top;
 }
-/*  */
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
 body {
-	padding-bottom: 100px;
+	font-family: "Gilroy", sans-serif;
+	line-height: 1;
+	padding-bottom:  50px;
 }
-h1 {
-	font-size: 50px;
+
+/* ---------------------------------------------------------- */
+.content {}
+
+.text_1,
+.text_2,
+.text_3,
+.text_4,
+.text_5,
+.text_6,
+.text_7,
+.text_8,
+.text_9 {
+	margin-bottom: 20px;
 }
-.navigation {
-	font-size: 30px;
-}
-.navigation li {
-	margin-bottom: 3px;
-}
-.nav_tiitle {
-	margin-bottom: 5px;
-}
-.header {
-	margin-bottom: 30px;
-}
-.main {
-}
-.content {
-	margin-bottom: 15px;
-}
-.content_title {
+
+.text_1 {
 	font-size: 25px;
-	margin-bottom: 5px;
-}
-.content_text {
-	font-size: 15px;
-	color: red;
-}
-.effer {
-	margin-bottom: 15px;
-}
-.smart {
-	margin-bottom: 15px;
-}
-.history {
-}
-.footer {
+	color: #dc143c;
+	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
 }
 
-/* p.content_text {
-	color: royalblue;
-} */
-/* .history p {
-	color: rgb(126, 95, 116);
-} */
-.history .content_title {
-	font-size: 50px;
-}
-.history,
-.footer {
-	color: aqua;
-}
-.effer .content_text,
-.effer .content_title {
-	color: blue;
-}
-*.content_title{
-	color: crimson;
-}
-.main ~ span {
-	color: rgba(27, 226, 37, 0.904);
-}
-p + .content_text {
-	color: darkgreen;
+.text_2 {
+	color: #1e90ff;
+	font-size: 19px;
+	text-indent: 100px;
 }
 
+.text_3 {
+	font-family: "Poppins", sans-serif;
+	color: #adff2f;
+	font-size: 10px;
+	white-space: nowrap;
+}
 
+.text_4 {
+	font-family: "Montserrat", sans-serif;
+	color: #11ad52;
+	font-weight: 700;
+	line-height: 200%;
+}
 
+.text_5 {
+	text-align: center;
+	text-transform: lowercase;
+}
 
+.text_6 {
+	text-align: justify;
+	text-decoration: underline;
+}
 
+.text_7 {
+	text-align: left;
+	color: #deb887;
+	text-transform: capitalize;
+	word-spacing: 15px;
+}
 
+.text_8 {
+	text-align: right;
+	text-decoration: line-through;
+}
 
+.text_9 {
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.image {
+	text-align: center;
+}
