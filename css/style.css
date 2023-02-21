@@ -1,42 +1,4 @@
 /* &display=swap&subset=cyrillic-ext */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
-
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-		url('../fonts/Gilroy-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-		url('../fonts/Gilroy-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-		url('../fonts/Montserrat-ExtraBold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-		url('../fonts/Montserrat-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -45,6 +7,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 
 li {
@@ -74,6 +37,11 @@ img {
 	vertical-align: top;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 html {
 	font-size: 16px;
 	/* по умолчанию */
@@ -82,78 +50,140 @@ html {
 body {
 	font-family: "Gilroy", sans-serif;
 	line-height: 1;
-	padding-bottom:  50px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 100px 0;
 }
 
 /* ---------------------------------------------------------- */
-.content {}
 
-.text_1,
-.text_2,
-.text_3,
-.text_4,
-.text_5,
-.text_6,
-.text_7,
-.text_8,
-.text_9 {
+.block_one {
+	max-width: 600px;
+	margin: 0 auto 30px auto;
+}
+
+.content {
+	box-sizing: content-box;
+	width: 400px;
+	height: 100px;
+	overflow: hidden;
+	margin: 0 auto 10px auto;
+	padding: 30px;
+	border: solid 10px;
+	background-color: coral;
+}
+
+.block_two {
+	max-width: 400px;
+	margin: 0 auto 30px auto;
+}
+
+.content_two {
+	background-color: #465ea0;
+	line-height: 101%;
+	margin: 30px;
+}
+
+.block_three {
+	max-width: 500px;
+}
+
+.content_three {
+	padding: 30%;
+	margin: 15%;
+	display: block;
+	background-color: crimson;
+}
+
+.block_title {
+	max-width: 300px;
+	margin: 0 auto 30px auto;
+}
+
+.title {
+	background-color: cyan;
+	display: block;
+}
+
+.title:not(:last-child) {
 	margin-bottom: 20px;
 }
 
-.text_1 {
-	font-size: 25px;
-	color: #dc143c;
-	font-weight: 300;
-	font-family: "Open Sans", sans-serif;
-}
-
-.text_2 {
-	color: #1e90ff;
-	font-size: 19px;
-	text-indent: 100px;
-}
-
-.text_3 {
-	font-family: "Poppins", sans-serif;
-	color: #adff2f;
-	font-size: 10px;
-	white-space: nowrap;
-}
-
-.text_4 {
-	font-family: "Montserrat", sans-serif;
-	color: #11ad52;
-	font-weight: 700;
-	line-height: 200%;
-}
-
-.text_5 {
+.title_block {
 	text-align: center;
-	text-transform: lowercase;
+	margin-bottom: 10px;
 }
 
-.text_6 {
-	text-align: justify;
+.block_slaim {
+	margin-bottom: 30px;
+}
+
+.slain_text {
+	padding: 15px;
+	background-color: chartreuse;
+	max-width: 200px;
+	max-height: 200px;
+	display: inline-block;
+}
+
+.link {
+	text-align: center;
+}
+
+.link_block {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.link_one {
+	color: black;
 	text-decoration: underline;
 }
 
-.text_7 {
-	text-align: left;
-	color: #deb887;
-	text-transform: capitalize;
-	word-spacing: 15px;
+.paragraph_block {
+	margin-bottom: 30px;
 }
 
-.text_8 {
-	text-align: right;
-	text-decoration: line-through;
+.paragraph_text {
+	padding: 10px;
+	max-width: 100px;
+	margin: 0 auto;
+	display: inline-block;
+	overflow: hidden;
+	background-color: darkmagenta;
 }
 
-.text_9 {
-	text-transform: uppercase;
-	letter-spacing: 10px;
+.paragraph_text:not(:last-child) {
+	margin-right: 30px;
 }
 
-.image {
-	text-align: center;
+.content_blocker {
+	max-width: 400px;
+	margin: 0 auto 30px auto;
+}
+
+.blocker {
+	padding: 30px;
+	background-color: gold;
+}
+
+.blocker_two {
+	margin-top: -80px;
+	padding: 30px;
+	background-color: deeppink;
+}
+
+.blocker:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.spanker_block {
+	padding: 15px;
+	display: block;
+	max-height: 200px;
+	background-color: forestgreen;
+	overflow: auto;
 }
