@@ -166,7 +166,7 @@ body {
 
 .services {
 	padding: 0 15px;
-	background: url(../img/services/decor.png) 83% 260% no-repeat;
+	background: url(../img/services/decor.webp) 83% 260% no-repeat;
 }
 
 .services_container {
@@ -286,7 +286,7 @@ body {
 /* =======================IMPACT================================= */
 
 .impact {
-	background: url(../img/inpact/decor.png) 70% 0 no-repeat;
+	background: url(../img/inpact/decor.webp) 70% 0 no-repeat;
 	padding: 0 15px;
 	background-color: #29C3BE;
 }
@@ -396,7 +396,6 @@ body {
 
 .impact_footer-body {
 	font-size: 0;
-	margin-bottom: 0 0 0 -135px;
 }
 
 .impcat_footer-text {
