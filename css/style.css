@@ -223,7 +223,9 @@ body {
 
 .testimonial__items {}
 
-.testimonial__item {}
+.testimonial__item {
+	vertical-align: top;
+}
 
 .item-testimonial {
 	max-width: 350px;
